@@ -1,62 +1,62 @@
 # Calorie Check
 
-Мобильное приложение для отслеживания потребления калорий, разработанное на Flutter.
+A mobile application for tracking calorie intake, developed with Flutter.
 
-## Описание
+## Description
 
-Calorie Check позволяет пользователям отслеживать свое ежедневное потребление калорий, управлять списком продуктов питания и просматривать статистику своих привычек питания. Приложение помогает поддерживать здоровый образ жизни путем контроля потребления калорий.
+Calorie Check allows users to track their daily calorie intake, manage a list of food items, and view statistics of their eating habits. The application helps maintain a healthy lifestyle by controlling calorie consumption.
 
-## Основные функции
+## Key Features
 
-- **Отслеживание ежедневного потребления калорий** - записывайте приемы пищи и следите за общим количеством потребленных калорий
-- **Управление списком продуктов питания** - добавляйте, редактируйте и удаляйте продукты из своей базы данных
-- **Установка целей по калориям** - задайте свой ежедневный лимит калорий
-- **Просмотр статистики** - отслеживайте свой прогресс с помощью графиков и трендов
+- **Daily Calorie Tracking** - record meals and monitor your total calories consumed
+- **Food Item Management** - add, edit, and delete food items from your database
+- **Calorie Goal Setting** - set your daily calorie limit
+- **Statistics Viewing** - track your progress with charts and trends
 
-## Технические детали
+## Technical Details
 
-Приложение построено с использованием:
+The application is built using:
 
-- **Flutter** - кроссплатформенный UI фреймворк
-- **BLoC** - архитектура управления состоянием
-- **Hive** - легковесная локальная NoSQL база данных для хранения информации
-- **Material Design 3** - современный пользовательский интерфейс
+- **Flutter** - cross-platform UI framework
+- **BLoC** - state management architecture
+- **Hive** - lightweight local NoSQL database for data storage
+- **Material Design 3** - modern user interface
 
-## Структура проекта
+## Project Structure
 
-Проект организован согласно принципам чистой архитектуры:
+The project is organized according to clean architecture principles:
 
-- **lib/core/** - основные утилиты и константы
-- **lib/data/** - слой данных (модели, источники данных, репозитории)
-- **lib/domain/** - бизнес-логика (BLoC, сущности, интерфейсы репозиториев)
-- **lib/presentation/** - пользовательский интерфейс (экраны, виджеты)
+- **lib/core/** - core utilities and constants
+- **lib/data/** - data layer (models, data sources, repositories)
+- **lib/domain/** - business logic (BLoC, entities, repository interfaces)
+- **lib/presentation/** - user interface (screens, widgets)
 
-## Установка и запуск
+## Installation and Running
 
-1. Убедитесь, что Flutter установлен на вашем компьютере.
-2. Клонируйте репозиторий:
+1. Make sure Flutter is installed on your computer.
+2. Clone the repository:
    ```
    git clone https://github.com/your-username/calorie_check.git
    ```
-3. Перейдите в директорию проекта:
+3. Navigate to the project directory:
    ```
    cd calorie_check
    ```
-4. Установите зависимости:
+4. Install dependencies:
    ```
    flutter pub get
    ```
-5. Запустите приложение:
+5. Run the application:
    ```
    flutter run
    ```
 
-## Требования
+## Requirements
 
-- Flutter 3.0.0 или выше
-- Dart 2.17.0 или выше
-- Подключение к устройству iOS/Android или эмулятор
+- Flutter 3.0.0 or higher
+- Dart 2.17.0 or higher
+- Connection to an iOS/Android device or emulator
 
-## Лицензия
+## License
 
 [MIT License](LICENSE)
