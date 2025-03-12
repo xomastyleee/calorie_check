@@ -1,0 +1,2 @@
+/Users/a/Desktop/git/calorie_check/android/app/.cxx/Debug/4q592r36/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/a/Desktop/git/calorie_check/android/app/.cxx/Debug/4q592r36/armeabi-v7a/CMakeFiles/rebuild_cache.dir
