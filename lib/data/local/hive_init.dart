@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -17,8 +18,15 @@ class HiveInit {
 
   /// Initialize Hive and register all adapters
   static Future<void> init() async {
-    final appDir = await getApplicationDocumentsDirectory();
-    await Hive.initFlutter(appDir.path);
+    // Initialize Hive differently for web vs mobile
+    if (kIsWeb) {
+      // For web, initialize without a path
+      await Hive.initFlutter();
+    } else {
+      // For mobile/desktop, use application documents directory
+      final appDir = await getApplicationDocumentsDirectory();
+      await Hive.initFlutter(appDir.path);
+    }
 
     // Register Hive adapters
     Hive.registerAdapter(FoodItemAdapter());
